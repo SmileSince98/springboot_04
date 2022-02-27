@@ -1,0 +1,17 @@
+server:
+  port: 80
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/db_springboot?useSSL=false&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: zwf123
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
