@@ -31,6 +31,7 @@ public class BooksServiceImpl extends ServiceImpl<BooksDao, Books> implements IB
         return page;
     }
 
+    //实现模糊查询
     @Override
     public IPage<Books> getPage(int currentPage, int pageSizes, Books books) {
         LambdaQueryWrapper<Books> lambdaQueryWrapper = new LambdaQueryWrapper<Books>();
